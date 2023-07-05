@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #E1701A;
+
+}
+
+
+html {
+    height: 100vh;
+    font-size: 62.5%;
+    box-sizing: content-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.7rem;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+    opacity: 0.9;
+    background-color: #E1701A;
+}
+
+.navbar-brand {
+    font-size: 3rem;
+    font-family: 'Oswald', sans-serif;
+    color: white !important;
+    padding-top: 0 !important;
+
+}
+
+.navbar-brand::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+
+
+.navbar-brand:hover::after {
+    width: 100%;
+}
+
+
+.nav-link {
+    font-size: 2.2rem;
+    padding-top: 1rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-toggler {
+    background-color: #E1701A !important;
+    border: 0;
+    box-shadow: 0;
+
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0;
+    border: 0;
+}
+
+.fa-sharp.fa-solid.fa-bars {
+    font-size: 2.3rem;
+    color: white;
+}
+
+
+.navbar-nav li a {
+    color: white !important;
+}
+
+
+#offcanvas_brand {
+    text-decoration: none;
+    color: white;
+}
+
+.offcanvas {
+    transition-duration: 0.8s !important;
+}
+
+.offcanvas-title {
+    font-size: 2.7rem;
+}
+
+#section_tanıtım {
+    height: 100vh;
+    background-image: url("./images/image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.baslik_row {
+    font-family: 'Merriweather', serif;
+}
+
+#section_hizmetler {
+    background-color: #F7A440;
+}
+
+#section_hizmetler_div {
+    height: 100%;
+}
+
+#section_hizmetler .col-md-6 {
+    height: 50vh !important;
+}
+
+.section_hizmetler_div_img {
+    width: 100%;
+    height: 100%;
+    filter: gray;
+    -webkit-filter: grayscale(100%);
+}
+
+
+#section_hizmetler .col-md-6:hover .section_hizmetler_div_img {
+    -webkit-filter: grayscale(0);
+    filter: none;
+}
+
+
+
+#hizmetler {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+#hizmetler_row {
+    color: #F7A440;
+    font-size: 3em;
+    font-family: 'Tilt Warp', cursive;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 1px;
+}
+
+
+.fa-solid.fa-user {
+    font-size: 5rem;
+}
+
+#section_hakkimizda {
+    padding: 5%;
+    background-color: #AAAAAA;
+}
+
+#section_hakkimizda_baslik {
+    font-size: 3rem;
+    padding-bottom: 3rem !important;
+}
+
+#section_urunler {
+    background-color: #DDDDDD;
+}
+
+#section_urunler .card {
+    box-shadow: 7px 7px 7px -2px rgba(0, 0, 0, 0.55);
+    transition: all 0.5s;
+}
+
+#section_urunler .card:hover {
+    transform: translateY(-10px);
+}
+
+#section_urunler .card img {
+    height: 25rem;
+}
+
+
+#section_iletisim {
+    background-color: #F9F9F9;
+}
+
+#iletisim-row {
+    color: #F9F9F9;
+    width: 100%;
+    font-size: 5rem;
+    font-family: 'Tilt Warp', cursive;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+}
+
+#email_contact {
+    font-size: 1.5em;
+}
+
+#email {
+    font-size: 3.5rem;
+    text-decoration: none;
+    color: #0F0E0E;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+
+.footer {
+    background-color: #E1701A;
+}
+
+#telefon {
+    font-size: 3rem;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+
+
+
+@media only screen and (min-width: 200px) {
+
+    html {
+        font-size: 40%;
+    }
+
+    #map {
+        height: 40rem;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    #map {
+        height: 45rem;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    html {
+        font-size: 56%;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 58%;
+    }
+
+    #map {
+        height: 50rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    html {
+        font-size: 60%;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    #map {
+        height: 60rem;
+    }
+
+}
