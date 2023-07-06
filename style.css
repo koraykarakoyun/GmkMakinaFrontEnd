@@ -130,7 +130,7 @@ body {
 }
 
 #section_hizmetler {
-    background-color: #F7A440;
+    background-color: #AAAAAA;
 }
 
 #section_hizmetler_div {
@@ -163,7 +163,9 @@ body {
 
 
 #hizmetler_row {
-    color: #F7A440;
+    padding: 0;
+    margin: 0;
+    color: #AAAAAA;
     font-size: 3em;
     font-family: 'Tilt Warp', cursive;
     -webkit-text-stroke-color: white;
@@ -176,12 +178,13 @@ body {
 }
 
 #section_hakkimizda {
-    padding: 5%;
+    padding: 2%;
     background-color: #AAAAAA;
 }
 
 #section_hakkimizda_baslik {
     font-size: 3rem;
+    padding-top: 2rem !important;
     padding-bottom: 3rem !important;
 }
 
@@ -251,7 +254,7 @@ body {
     }
 
     #map {
-        height: 40rem;
+        height: 45rem;
     }
 }
 
@@ -262,7 +265,7 @@ body {
     }
 
     #map {
-        height: 45rem;
+        height: 50rem;
     }
 }
 
@@ -281,7 +284,7 @@ body {
     }
 
     #map {
-        height: 50rem;
+        height: 60rem;
     }
 }
 
@@ -300,7 +303,7 @@ body {
     }
 
     #map {
-        height: 60rem;
+        height: 70rem;
     }
 
 }

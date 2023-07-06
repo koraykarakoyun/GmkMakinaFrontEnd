@@ -16,6 +16,25 @@ function bounceInLeft() {
     }
 }
 
+function bounceInDownn() {
+    var reveals = document.querySelectorAll(".bounceInDown");
+
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("animate__animated");
+            reveals[i].classList.add("animate__bounceInDown");
+        } else {
+            reveals[i].classList.remove("animate__animated");
+            reveals[i].classList.remove("animate__bounceInDown");
+        }
+    }
+}
+
+
 function fade_in_down() {
     var reveals = document.querySelectorAll(".fade_in_down");
 
@@ -56,6 +75,8 @@ function animate_tada() {
 }
 
 
+
 window.addEventListener("scroll", bounceInLeft);
 window.addEventListener("scroll", fade_in_down);
 window.addEventListener("scroll", animate_tada);
+window.addEventListener("scroll", bounceInDownn);
